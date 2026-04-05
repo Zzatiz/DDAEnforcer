@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#203a43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5364;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="200" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="960" height="4" fill="url(#accentGrad)" rx="2"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(60, 40)" filter="url(#glow)">
+    <path d="M60,0 L120,22 L120,70 Q120,110 60,130 Q0,110 0,70 L0,22 Z"
+          fill="none" stroke="url(#accentGrad)" stroke-width="3" opacity="0.9"/>
+    <path d="M60,15 L108,33 L108,70 Q108,103 60,120 Q12,103 12,70 L12,33 Z"
+          fill="#0072ff" opacity="0.15"/>
+    <!-- Lock body -->
+    <rect x="38" y="68" width="44" height="34" rx="5"
+          fill="none" stroke="#00c6ff" stroke-width="2.5"/>
+    <!-- Lock shackle -->
+    <path d="M46,68 L46,55 Q46,40 60,40 Q74,40 74,55 L74,68"
+          fill="none" stroke="#00c6ff" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Keyhole -->
+    <circle cx="60" cy="81" r="5" fill="#00c6ff"/>
+    <rect x="57" y="83" width="6" height="10" rx="2" fill="#00c6ff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="210" y="90" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="48" font-weight="700" fill="#ffffff" filter="url(#glow)">
+    DDAEnforcer
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="210" y="100" width="340" height="3" fill="url(#accentGrad)" rx="1.5"/>
+
+  <!-- Subtitle -->
+  <text x="210" y="135" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="18" fill="#a0c8e8" letter-spacing="1">
+    Demand Deposit Account Enforcement Toolkit
+  </text>
+
+  <!-- Tag chips -->
+  <g transform="translate(210, 155)">
+    <rect width="72" height="26" rx="13" fill="#0072ff" opacity="0.3"/>
+    <text x="36" y="17.5" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+          fill="#00c6ff" text-anchor="middle">Android</text>
+  </g>
+  <g transform="translate(292, 155)">
+    <rect width="70" height="26" rx="13" fill="#0072ff" opacity="0.3"/>
+    <text x="35" y="17.5" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+          fill="#00c6ff" text-anchor="middle">Security</text>
+  </g>
+  <g transform="translate(372, 155)">
+    <rect width="80" height="26" rx="13" fill="#0072ff" opacity="0.3"/>
+    <text x="40" y="17.5" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+          fill="#00c6ff" text-anchor="middle">Compliance</text>
+  </g>
+
+  <!-- Decorative right circuit lines -->
+  <g opacity="0.15" stroke="#00c6ff" stroke-width="1">
+    <line x1="780" y1="30" x2="920" y2="30"/>
+    <line x1="800" y1="30" x2="800" y2="80"/>
+    <circle cx="800" cy="80" r="4" fill="#00c6ff" stroke="none"/>
+    <line x1="800" y1="80" x2="870" y2="80"/>
+    <line x1="870" y1="80" x2="870" y2="130"/>
+    <circle cx="870" cy="130" r="4" fill="#00c6ff" stroke="none"/>
+    <line x1="870" y1="130" x2="940" y2="130"/>
+    <line x1="920" y1="30" x2="920" y2="55"/>
+    <circle cx="920" cy="55" r="3" fill="#00c6ff" stroke="none"/>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="196" width="960" height="4" fill="url(#accentGrad)" rx="2"/>
+</svg>
